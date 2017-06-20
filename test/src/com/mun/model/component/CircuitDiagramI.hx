@@ -1,6 +1,7 @@
 package com.mun.model.component;
 import com.mun.model.drawingInterface.DrawingAdapterI;
 import com.mun.type.Type.LinkAndComponentArray;
+import com.mun.type.Coordinate ;
 import com.mun.controller.command.CommandManager;
 import com.mun.model.enumeration.Orientation;
 /**
@@ -149,4 +150,9 @@ interface CircuitDiagramI {
     * draw the circuit diagram itself
     **/
     public function draw(?linkAndComponentArray:LinkAndComponentArray, drawingAdapter:DrawingAdapterI):Void;
+
+    public function  hitList( wc : Coordinate, mode : HitListMode ) : LinkAndComponentArray ;
+
+    public function findWorldPoints( wc : Coordinate, mode : WorldPointsMode ) : ListOfWorldPoints ;
+
 }

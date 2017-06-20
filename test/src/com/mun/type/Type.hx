@@ -27,4 +27,12 @@ typedef LinkAndComponentAndEndpointArray = {
     var endpointArray:Array<Endpoint>;
 }
 
+typedef WorldPoint = {
+    var diagram : CircuitDiagram ;
+    var Coordinate ;
+}
+
+class ListOfWorldPoints { }
+
+
 
